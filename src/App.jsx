@@ -1,5 +1,5 @@
 import React from 'react';
-import FlowerImg from 'assets/flower.webp';
+import FlowerImg from 'assets/flower.png';
 import Demo1 from 'assets/demo1.webp';
 
 import 'animate.css';
@@ -10,7 +10,7 @@ const App = () => {
   return (
     <div className='main-page'>
       <section className='main-slider'>
-        <div className='main-slider__layout' />
+        <div className='main-slider__overlay' />
         <div className='main-slider__bg-img' style={{ backgroundImage: `url(${Demo1})` }} />
 
         <div className='main-slider__text'>
