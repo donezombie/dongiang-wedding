@@ -22,6 +22,7 @@
 
         background-repeat: no-repeat;
         background-size: cover;
+        background-attachment: fixed;
 
         @include mobile {
             background-position-x: 80%;
