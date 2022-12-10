@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/dongiang-wedding/static/css/main.efee0a75.css",
+    "main.js": "/dongiang-wedding/static/js/main.83fb8511.js",
+    "static/js/496.cf0735c8.chunk.js": "/dongiang-wedding/static/js/496.cf0735c8.chunk.js",
+    "index.html": "/dongiang-wedding/index.html",
+    "main.efee0a75.css.map": "/dongiang-wedding/static/css/main.efee0a75.css.map",
+    "main.83fb8511.js.map": "/dongiang-wedding/static/js/main.83fb8511.js.map",
+    "496.cf0735c8.chunk.js.map": "/dongiang-wedding/static/js/496.cf0735c8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.efee0a75.css",
+    "static/js/main.83fb8511.js"
+  ]
+}
