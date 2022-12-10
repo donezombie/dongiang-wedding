@@ -1,0 +1,95 @@
+.main-slider {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+    overflow: hidden;
+
+    &__layout {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(36, 36, 36, 1);
+        opacity: 0.7;
+        z-index: 2;
+    }
+
+    &__bg-img {
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        @include mobile {
+            background-position-x: 80%;
+        }
+    }
+
+    &__text {
+        position: absolute;
+        z-index: 3;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+
+        img {
+            transform: translateX(-14px);
+
+            @include mobile {
+                transform: translate(0px);
+            }
+        }
+
+        p {
+            color: var(--white-color);
+            font-size: 70px;
+            margin-bottom: 1.5rem;
+        }
+
+        p:nth-of-type(1) {
+            letter-spacing: 3px;
+
+            @include mobile {
+                font-size: 30px;
+            }
+        }
+
+        p:nth-of-type(2) {
+            font-size: 16px;
+            letter-spacing: 3px;
+            font-family: var(--font-rale-way);
+            position: relative;
+
+            @include mobile {
+                font-size: 14px;
+                line-height: 1.5;
+            }
+
+            &::after,
+            &::before {
+                content: "";
+                width: 35px;
+                height: 1px;
+                background-color: var(--white-color);
+                position: absolute;
+                top: 50%;
+
+                @include mobile {
+                    display: none;
+                }
+            }
+
+            &::after {
+                right: -10px;
+            }
+
+            &::before {
+                left: -10px;
+            }
+        }
+    }
+}

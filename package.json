@@ -1,17 +1,20 @@
 {
-  "name": "dzb-react-template",
+  "name": "don-giang-wedding",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://donezombie.github.io/dongiang-wedding",
   "dependencies": {
     "@reduxjs/toolkit": "^1.4.0",
     "@tailwindcss/forms": "^0.3.2",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "animate.css": "^4.1.1",
     "axios": "^0.21.1",
     "eslint": "^7.27.0",
     "flat": "^5.0.2",
     "formik": "^2.1.6",
+    "gh-pages": "^4.0.0",
     "i18next": "^20.3.2",
     "immer": "^8.0.1",
     "react": "^18.2.0",
@@ -38,7 +41,9 @@
     "eject": "react-scripts eject",
     "format": "prettier --write ./src/** --ignore-unknown",
     "lint": "eslint . --ext js --ext jsx",
-    "type-check": "tsc --pretty --noEmit"
+    "type-check": "tsc --pretty --noEmit",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {},
   "browserslist": {

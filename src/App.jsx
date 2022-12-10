@@ -1,28 +1,26 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import FlowerImg from 'assets/flower.webp';
+import Demo1 from 'assets/demo1.webp';
 
-import PrivateRoute from 'components/PrivateRoute';
-import { RouteBase } from 'constants/routeUrl';
-import LoginPage from 'views/Login';
-import DefaultLayout from 'layout/DefaultLayout';
+import 'animate.css';
 import './scss/styles.scss';
 
 const App = () => {
   //! Render
   return (
-    <Router>
-      <Routes>
-        <Route path={RouteBase.Login} exact element={<LoginPage />} />
-        <Route
-          path="*"
-          element={
-            <PrivateRoute>
-              <DefaultLayout />
-            </PrivateRoute>
-          }
-        />
-      </Routes>
-    </Router>
+    <div className='main-page'>
+      <section className='main-slider'>
+        <div className='main-slider__layout' />
+        <div className='main-slider__bg-img' style={{ backgroundImage: `url(${Demo1})` }} />
+
+        <div className='main-slider__text'>
+          <img className="animate__animated animate__fadeIn" alt="flower" src={FlowerImg} />
+          <p className="animate__animated animate__fadeIn">Đôn & Giang</p>
+          <p className="animate__animated animate__fadeIn">WEDDING PHOTOGRAPHY</p>
+        </div>
+
+      </section>
+    </div>
   );
 };
 
