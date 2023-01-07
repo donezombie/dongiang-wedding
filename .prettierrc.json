@@ -6,7 +6,10 @@
   "endOfLine": "lf",
   "overrides": [
     {
-      "files": ["*.js", "*.jsx"],
+      "files": [
+        "*.js",
+        "*.jsx"
+      ],
       "options": {
         "printWidth": 120,
         "tabWidth": 2
