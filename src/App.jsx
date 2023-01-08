@@ -6,6 +6,7 @@ import { useLayoutEffect } from 'react';
 import 'animate.css';
 import './scss/styles.scss';
 import SectionThankYou from 'components/Sections/SectionThankYou';
+import SectionMainCharacter from 'components/Sections/SectionMainCharacter';
 
 const App = () => {
   //! State
@@ -20,6 +21,7 @@ const App = () => {
     <div className='main-page'>
       <SectionMain />
       <SectionInvitation />
+      <SectionMainCharacter />
       <SectionThankYou />
     </div>
   );
