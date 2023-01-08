@@ -21,6 +21,19 @@ body {
   width: 100%;
 }
 
+.aspect-ratio {
+  width: 100%;
+  position: relative;
+
+  &__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+}
+
 #ReactSimpleImageViewer {
   z-index: 99 !important;
 }

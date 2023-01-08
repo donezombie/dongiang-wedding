@@ -313,8 +313,9 @@
     }
 
     > img:first-child {
-      max-width: 75%;
-      aspect-ratio: 1/1;
+      --width-image: 75%;
+      width: var(--width-image);
+      height: var(--width-image);
       object-fit: cover;
 
       border-radius: 50%;
