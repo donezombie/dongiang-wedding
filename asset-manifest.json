@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/dongiang-wedding/static/css/main.5c072168.css",
-    "main.js": "/dongiang-wedding/static/js/main.bb6b6e51.js",
+    "main.css": "/dongiang-wedding/static/css/main.95e993fd.css",
+    "main.js": "/dongiang-wedding/static/js/main.f0912ea9.js",
     "static/js/496.90578cba.chunk.js": "/dongiang-wedding/static/js/496.90578cba.chunk.js",
     "static/media/thankyou.gif": "/dongiang-wedding/static/media/thankyou.28d7189fa0bbeb3d9e0c.gif",
     "static/media/flower-title.gif": "/dongiang-wedding/static/media/flower-title.82126354c62027d6399e.gif",
@@ -15,12 +15,12 @@
     "static/media/demo1.webp": "/dongiang-wedding/static/media/demo1.328c2b04168add9f84a2.webp",
     "static/media/flower.png": "/dongiang-wedding/static/media/flower.1ea9ed4bd67b4d15abde.png",
     "index.html": "/dongiang-wedding/index.html",
-    "main.5c072168.css.map": "/dongiang-wedding/static/css/main.5c072168.css.map",
-    "main.bb6b6e51.js.map": "/dongiang-wedding/static/js/main.bb6b6e51.js.map",
+    "main.95e993fd.css.map": "/dongiang-wedding/static/css/main.95e993fd.css.map",
+    "main.f0912ea9.js.map": "/dongiang-wedding/static/js/main.f0912ea9.js.map",
     "496.90578cba.chunk.js.map": "/dongiang-wedding/static/js/496.90578cba.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5c072168.css",
-    "static/js/main.bb6b6e51.js"
+    "static/css/main.95e993fd.css",
+    "static/js/main.f0912ea9.js"
   ]
 }
