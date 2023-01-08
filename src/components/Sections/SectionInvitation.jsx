@@ -7,7 +7,7 @@ import { GrLocation } from 'react-icons/gr';
 
 const SectionInvitation = () => {
   //! State
-	const linkMap = 'https://goo.gl/maps/zPWhEfv8d9Q1eeTFA';
+  const linkMap = 'https://goo.gl/maps/zPWhEfv8d9Q1eeTFA';
 
   //! Render
   return (
@@ -19,12 +19,25 @@ const SectionInvitation = () => {
             <img src={SaveDateGif} alt="save-date" />
           </div>
           <div className="main-invitation__left__box__text">
-            <p data-aos="fade-down" data-aos-duration="800">For the wedding of</p>
-            <p data-aos="fade-down" data-aos-delay="400" data-aos-duration="800">Quý Đôn & Đoàn Giang</p>
-            <p data-aos="fade-down" data-aos-delay="500" data-aos-duration="800">tại</p>
-            <p data-aos="fade-down" data-aos-delay="600" data-aos-duration="800" style={{ margin: '0.3rem 0' }}>Nhà hàng Golden Place Yên Bái</p>
-            <p data-aos="fade-down" data-aos-delay="700" data-aos-duration="800">
-              <a style={{ display: 'flex', alignItems: 'center', justifyContent: 'center'}} href={linkMap} target="_blank" rel="noreferrer">
+            <p data-aos="fade-down" data-aos-duration="800">
+              For the wedding of
+            </p>
+            <p data-aos="fade-down" data-aos-duration="800">
+              Quý Đôn & Đoàn Giang
+            </p>
+            <p data-aos="fade-down" data-aos-duration="800">
+              tại
+            </p>
+            <p data-aos="fade-down" data-aos-duration="800" style={{ margin: '0.3rem 0' }}>
+              Nhà hàng Golden Place Yên Bái
+            </p>
+            <p data-aos="fade-down" data-aos-duration="800">
+              <a
+                style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+                href={linkMap}
+                target="_blank"
+                rel="noreferrer"
+              >
                 <GrLocation style={{ marginRight: 8 }} /> Xem bản đồ
               </a>
             </p>
