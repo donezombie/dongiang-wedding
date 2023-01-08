@@ -8,15 +8,20 @@ const SectionMain = () => {
 
   //! Render
   return (
-    <section className='main-slider'>
-      <div className='main-slider__overlay' />
-      <div className='main-slider__bg-img' style={{ backgroundImage: `url(${Demo1})` }} />
+    <section className="main-slider">
+      <div className="main-slider__overlay" />
+      <div className="main-slider__bg-img" style={{ backgroundImage: `url(${Demo1})` }} />
 
-      <div className='main-slider__text'>
+      <div className="main-slider__text">
         <Parallax translateY={[-50, 50]}>
-          <img className="animate__animated animate__fadeIn" alt="flower" src={FlowerImg} />
-          <p className="animate__animated animate__fadeIn">Đôn & Giang</p>
-          <p className="animate__animated animate__fadeIn">WEDDING MEMORIES</p>
+          <div data-aos="fade-down" data-aos-duration="1000">
+            <img
+              alt="flower"
+              src={FlowerImg}
+            />
+          </div>
+          <p data-aos="fade-left"  data-aos-delay="600" data-aos-duration="1500">Đôn & Giang</p>
+          <p data-aos="fade-right"  data-aos-delay="900" data-aos-duration="1500">WEDDING MEMORIES</p>
         </Parallax>
       </div>
     </section>
