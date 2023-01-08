@@ -1,12 +1,14 @@
 import React from 'react';
+import { useLayoutEffect } from 'react';
+
 import SectionMain from 'components/Sections/SectionMain';
 import SectionInvitation from 'components/Sections/SectionInvitation';
-import { useLayoutEffect } from 'react';
+import SectionThankYou from 'components/Sections/SectionThankYou';
+import SectionMainCharacter from 'components/Sections/SectionMainCharacter';
+import SectionAlbums from 'components/Sections/SectionAlbums';
 
 import 'animate.css';
 import './scss/styles.scss';
-import SectionThankYou from 'components/Sections/SectionThankYou';
-import SectionMainCharacter from 'components/Sections/SectionMainCharacter';
 
 const App = () => {
   //! State
@@ -22,6 +24,7 @@ const App = () => {
       <SectionMain />
       <SectionInvitation />
       <SectionMainCharacter />
+      <SectionAlbums />
       <SectionThankYou />
     </div>
   );
