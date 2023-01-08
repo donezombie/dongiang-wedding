@@ -1,7 +1,6 @@
 import React from 'react';
 import ThankYou from 'assets/thankyou.gif';
 import CouplePic from 'assets/couplePic.jpg';
-import AspectRatio from 'components/AspectRatio';
 
 const SectionThankYou = () => {
   //! State
