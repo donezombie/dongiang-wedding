@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/dongiang-wedding/static/css/main.a94e7555.css",
+    "main.js": "/dongiang-wedding/static/js/main.4e26a724.js",
+    "static/js/496.90578cba.chunk.js": "/dongiang-wedding/static/js/496.90578cba.chunk.js",
+    "static/media/thankyou.gif": "/dongiang-wedding/static/media/thankyou.28d7189fa0bbeb3d9e0c.gif",
+    "static/media/flower-title.gif": "/dongiang-wedding/static/media/flower-title.82126354c62027d6399e.gif",
+    "static/media/footer-shape.png": "/dongiang-wedding/static/media/footer-shape.0d4c3c8c62f601298df9.png",
+    "static/media/couplePic.jpg": "/dongiang-wedding/static/media/couplePic.561db4442a6464ca30b9.jpg",
+    "static/media/invitation-right.png": "/dongiang-wedding/static/media/invitation-right.1ad98c934fd5c6b9b4d3.png",
+    "static/media/couple-frame.png": "/dongiang-wedding/static/media/couple-frame.c8e295016a6e721b670a.png",
+    "static/media/bg.png": "/dongiang-wedding/static/media/bg.665c783f2c20cffc2c28.png",
+    "static/media/invitation-left.png": "/dongiang-wedding/static/media/invitation-left.9400fbd340f37ee2d664.png",
+    "static/media/savethedate.gif": "/dongiang-wedding/static/media/savethedate.513ab09bbfae0d24da53.gif",
+    "static/media/demo1.webp": "/dongiang-wedding/static/media/demo1.328c2b04168add9f84a2.webp",
+    "static/media/flower.png": "/dongiang-wedding/static/media/flower.1ea9ed4bd67b4d15abde.png",
+    "index.html": "/dongiang-wedding/index.html",
+    "main.a94e7555.css.map": "/dongiang-wedding/static/css/main.a94e7555.css.map",
+    "main.4e26a724.js.map": "/dongiang-wedding/static/js/main.4e26a724.js.map",
+    "496.90578cba.chunk.js.map": "/dongiang-wedding/static/js/496.90578cba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a94e7555.css",
+    "static/js/main.4e26a724.js"
+  ]
+}
