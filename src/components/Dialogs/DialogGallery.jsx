@@ -58,7 +58,7 @@ const DialogGallery = ({ open, toggle }) => {
     <Modal isOpen={open} toggle={toggle}>
       <ModalHeader toggle={toggle}>Album ảnh</ModalHeader>
       <ModalBody>
-        <div className="main-albums__list">
+        <div className="main-albums__list" style={{ maxHeight: '85vh', overflow: 'auto' }}>
           {imagesThumbNail.map((src, index) => (
             <Image
               src={src}
