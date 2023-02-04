@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 
 const useGetWidth = (props) => {
   const currentWidth = document.body.offsetWidth;
@@ -15,7 +15,9 @@ const useGetWidth = (props) => {
     };
   }, []);
 
-  return width;
+  return useMemo(() => {
+    return { width, isMobile: width <= 800 };
+  }, [width]);
 };
 
 export default useGetWidth;

@@ -1,26 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.258f74f0.css",
-    "main.js": "/static/js/main.183bf0bc.js",
+    "main.css": "/static/css/main.440b57c8.css",
+    "main.js": "/static/js/main.b92e71cd.js",
     "static/js/496.90578cba.chunk.js": "/static/js/496.90578cba.chunk.js",
+    "static/media/main-bg.jpeg": "/static/media/main-bg.b37329eb994057abcfd9.jpeg",
     "static/media/thankyou.gif": "/static/media/thankyou.28d7189fa0bbeb3d9e0c.gif",
     "static/media/flower-title.gif": "/static/media/flower-title.82126354c62027d6399e.gif",
     "static/media/footer-shape.png": "/static/media/footer-shape.0d4c3c8c62f601298df9.png",
     "static/media/couplePic.jpg": "/static/media/couplePic.561db4442a6464ca30b9.jpg",
     "static/media/invitation-right.png": "/static/media/invitation-right.1ad98c934fd5c6b9b4d3.png",
     "static/media/couple-frame.png": "/static/media/couple-frame.c8e295016a6e721b670a.png",
-    "static/media/bg.png": "/static/media/bg.665c783f2c20cffc2c28.png",
+    "static/media/swipe.gif": "/static/media/swipe.ebe8663bd65cf043d111.gif",
     "static/media/invitation-left.png": "/static/media/invitation-left.9400fbd340f37ee2d664.png",
     "static/media/savethedate.gif": "/static/media/savethedate.513ab09bbfae0d24da53.gif",
     "static/media/demo1.webp": "/static/media/demo1.328c2b04168add9f84a2.webp",
     "static/media/flower.png": "/static/media/flower.1ea9ed4bd67b4d15abde.png",
     "index.html": "/index.html",
-    "main.258f74f0.css.map": "/static/css/main.258f74f0.css.map",
-    "main.183bf0bc.js.map": "/static/js/main.183bf0bc.js.map",
+    "main.440b57c8.css.map": "/static/css/main.440b57c8.css.map",
+    "main.b92e71cd.js.map": "/static/js/main.b92e71cd.js.map",
     "496.90578cba.chunk.js.map": "/static/js/496.90578cba.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.258f74f0.css",
-    "static/js/main.183bf0bc.js"
+    "static/css/main.440b57c8.css",
+    "static/js/main.b92e71cd.js"
   ]
 }

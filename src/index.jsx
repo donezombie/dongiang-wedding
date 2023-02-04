@@ -7,6 +7,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { createRoot } from 'react-dom/client';
 import { ParallaxProvider } from 'react-scroll-parallax';
+import SwipeProvider from 'providers/SwipeProvider';
 
 import reportWebVitals from 'reportWebVitals';
 
@@ -15,7 +16,9 @@ const root = createRoot(container);
 root.render(
   <React.StrictMode>
     <ParallaxProvider>
-      <App />
+      <SwipeProvider>
+        <App />
+      </SwipeProvider>
     </ParallaxProvider>
   </React.StrictMode>,
 );
