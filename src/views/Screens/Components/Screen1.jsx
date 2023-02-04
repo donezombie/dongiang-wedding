@@ -1,15 +1,12 @@
 import React from 'react';
 import firstBg from 'assets/main-bg.jpeg';
 import FlowerImg from 'assets/flower.png';
-import { useSwiperSlide } from 'swiper/react';
 import classNames from 'classnames';
 
 const propTypes = {};
 
-const Screen1 = (props) => {
+const Screen1 = ({ isActive }) => {
   //! State
-  const swipeSlider = useSwiperSlide();
-  const { isActive } = swipeSlider;
 
   //! Function
 
@@ -25,21 +22,21 @@ const Screen1 = (props) => {
       />
 
       <div className="content">
-        <div className={classNames('flower-img', { 'animate__animated animate__fadeInDown animate__slow': isActive })}>
+        <div className={classNames('flower-img', { 'animate__animated animate__fadeInDown animate__delay-2s animate__slow': isActive })}>
           <img alt="flower" src={FlowerImg} />
         </div>
         <img
-          className={classNames('main-img', { 'animate__animated animate__fadeIn animate__slow': isActive })}
+          className={classNames('main-img', { 'animate__animated animate__fadeIn animate__delay-2s animate__slow': isActive })}
           src={firstBg}
           alt="don-giang"
         />
         <p
-          className={classNames({ 'animate__animated animate__fadeInLeft animate__delay-2s animate__slow': isActive })}
+          className={classNames({ 'animate__animated animate__fadeInLeft animate__delay-3s animate__slow': isActive })}
         >
           Đôn & Giang
         </p>
         <p
-          className={classNames({ 'animate__animated animate__fadeInRight animate__delay-2s animate__slow': isActive })}
+          className={classNames({ 'animate__animated animate__fadeInRight animate__delay-3s animate__slow': isActive })}
         >
           WEDDING MEMORIES
         </p>

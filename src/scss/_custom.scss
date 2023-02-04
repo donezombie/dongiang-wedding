@@ -203,3 +203,20 @@ a {
     cursor: pointer;
   }
 }
+
+.loading {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  background-color: #FFFCF8;
+
+  img {
+    width: 250px;
+  }
+}

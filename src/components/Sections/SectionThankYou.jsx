@@ -9,14 +9,11 @@ import { GrLocation } from 'react-icons/gr';
 import { BsPiggyBank } from 'react-icons/bs';
 import { BiPhotoAlbum } from 'react-icons/bi';
 import { FcIphone } from 'react-icons/fc';
-import { useSwiperSlide } from 'swiper/react';
 import classNames from 'classnames';
 
-const SectionThankYou = () => {
+const SectionThankYou = ({ isActive }) => {
   //! State
   const [openPay, togglePay, shouldRenderPay] = useToggleDialog();
-  const swipeSlider = useSwiperSlide();
-  const { isActive } = swipeSlider;
 
   const accessories = [
     {

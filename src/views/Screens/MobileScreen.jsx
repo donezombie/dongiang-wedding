@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react';
+import React, { Fragment, useEffect, useState } from 'react';
 import { Pagination, EffectFade } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { useSwipe } from 'providers/SwipeProvider';
@@ -9,12 +9,20 @@ import Screen1 from './Components/Screen1';
 import Screen2 from './Components/Screen2';
 import Screen3 from './Components/Screen3';
 import Screen4 from './Components/Screen4';
+import Loading from 'components/Loading';
 
 const MobileScreen = () => {
   //! State
   const { setSwiped } = useSwipe();
   const [indexSlides, setIndexSlides] = useState([0]);
   const [modal, toggle, shouldRender] = useToggleDialog(false);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+  }, []);
 
   //! Render
   const slides = [
@@ -36,6 +44,8 @@ const MobileScreen = () => {
     <Fragment>
       {shouldRender && <DialogIntroduce open={modal} toggle={toggle} />}
 
+      {loading && <Loading />}
+
       <Swiper
         modules={[Pagination, EffectFade]}
         pagination={{
@@ -55,7 +65,11 @@ const MobileScreen = () => {
         }}
       >
         {slides.map((el, idx) => {
-          return <SwiperSlide key={`${idx}`}><el.component key={`${idx}`} /></SwiperSlide>;
+          return (
+            <SwiperSlide key={`${idx}`}>
+              <el.component key={`${idx}`} isActive={indexSlides.includes(idx)} />
+            </SwiperSlide>
+          );
         })}
       </Swiper>
     </Fragment>

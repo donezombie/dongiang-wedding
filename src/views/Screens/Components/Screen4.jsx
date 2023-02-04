@@ -1,12 +1,10 @@
 import React from 'react';
 import BgDefault from 'assets/bg.png';
-import FlowerInvitationRight from 'assets/invitation-right.png';
-import FlowerTitleGif from 'assets/flower-title.gif';
 import SectionThankYou from 'components/Sections/SectionThankYou';
 
 const propTypes = {};
 
-const Screen4 = (props) => {
+const Screen4 = ({ isActive }) => {
   //! State
 
   //! Function
@@ -24,7 +22,7 @@ const Screen4 = (props) => {
         }}
       />
 
-      <SectionThankYou />
+      <SectionThankYou isActive={isActive} />
     </div>
   );
 };

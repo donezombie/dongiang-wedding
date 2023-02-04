@@ -2,15 +2,12 @@ import React from 'react';
 import BgDefault from 'assets/bg.png';
 import FlowerInvitationRight from 'assets/invitation-right.png';
 import FlowerTitleGif from 'assets/flower-title.gif';
-import { useSwiperSlide } from 'swiper/react';
 import classNames from 'classnames';
 
 const propTypes = {};
 
-const Screen3 = (props) => {
+const Screen3 = ({isActive}) => {
   //! State
-  const swipeSlider = useSwiperSlide();
-  const { isActive } = swipeSlider;
 
   //! Function
 
