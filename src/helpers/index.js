@@ -92,8 +92,21 @@ export const correctBodyToRequest = (params = {}, removeNull = false) => {
   }, {});
 };
 
-export const delay = ms => {
+export const delay = (ms) => {
   return new Promise((resolve) => {
-    setTimeout(() => { resolve('') }, ms)
-  })
-}
+    setTimeout(() => {
+      resolve('');
+    }, ms);
+  });
+};
+
+export const convertLinkImageGoogleDrive = (linkShare = '') => {
+  const idImg = linkShare.split('/')[5];
+  return `https://drive.google.com/uc?export=view&id=${idImg}`;
+};
+
+export const convertThumbnailToOriginGGDrive = (imagesThumbNail = []) => {
+  return imagesThumbNail.map((el) => {
+    return el.replace('w400', 'w3470').replace('h380', 'h1918').replace('p-k-nu-', '');
+  });
+};

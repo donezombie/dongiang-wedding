@@ -10,30 +10,32 @@ import { BsPiggyBank } from 'react-icons/bs';
 import { BiPhotoAlbum } from 'react-icons/bi';
 import { FcIphone } from 'react-icons/fc';
 import classNames from 'classnames';
+import DialogGallery from 'components/Dialogs/DialogGallery';
+import { useSwiperSlide } from 'swiper/react';
 
 const SectionThankYou = ({ isActive }) => {
   //! State
+  const { isVisible } = useSwiperSlide();
   const [openPay, togglePay, shouldRenderPay] = useToggleDialog();
+  const [openAlbum, toggleAlbum, shouldRenderAlbum] = useToggleDialog();
 
   const accessories = [
     {
       label: 'Click để chỉ đường',
       icon: GrLocation,
       onClick: () => {
-        window.open(linkMap, '__blank');
+        isVisible ? window.open(linkMap, '__blank') : undefined;
       },
     },
     {
       label: 'Xem album cưới',
       icon: BiPhotoAlbum,
-      onClick: () => {
-        window.open('https://google.com', '__blank');
-      },
+      onClick: isVisible ? toggleAlbum : undefined,
     },
     {
       label: 'Hòm $, Mừng cưới',
       icon: BsPiggyBank,
-      onClick: togglePay,
+      onClick: isVisible ? togglePay : undefined,
     },
   ];
 
@@ -41,6 +43,7 @@ const SectionThankYou = ({ isActive }) => {
   return (
     <section className="footer">
       {shouldRenderPay && <DialogPay open={openPay} toggle={togglePay} />}
+      {shouldRenderAlbum && <DialogGallery open={openAlbum} toggle={toggleAlbum} />}
 
       <div className={classNames('footer__couple', { 'animate__animated animate__fadeIn animate__slow': isActive })}>
         <img src={CouplePic} alt="couple-frame" />

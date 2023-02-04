@@ -359,26 +359,21 @@
   &__list{
     max-width: 1024px;
     margin: auto;
-    padding: 12px;
 
     display: flex;
-    gap: 20px;
+    gap: 8px;
     flex-wrap: wrap;
 
     > img {
-      width: calc(100% / 3 - 14px);
+      width: calc(100% / 2 - 5px);
       box-shadow: 0px 2px 4px #ccc;
-      border-radius: 8px;
+      border-radius: 4px;
       object-fit: cover;
       transition: .3s;
 
       &:hover {
         cursor: pointer;
         filter: brightness(0.8);
-      }
-
-      @include mobile {
-        width: calc(100% / 2 - 10px);
       }
     }
   }

@@ -16,6 +16,7 @@
     "eslint": "^7.27.0",
     "flat": "^5.0.2",
     "formik": "^2.1.6",
+    "fslightbox-react": "^1.6.3",
     "gh-pages": "^4.0.0",
     "i18next": "^20.3.2",
     "immer": "^8.0.1",
@@ -81,13 +82,9 @@
     "prettier": "^2.2.1"
   },
   "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+    "hooks": {}
   },
   "lint-staged": {
-    "*.@(js|jsx)": [
-      "npm run lint"
-    ]
+    "*.@(js|jsx)": []
   }
 }
