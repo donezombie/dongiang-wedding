@@ -110,3 +110,7 @@ export const convertThumbnailToOriginGGDrive = (imagesThumbNail = []) => {
     return el.replace('w400', 'w3470').replace('h380', 'h1918').replace('p-k-nu-', '');
   });
 };
+
+export const convertLH3ToLH4 = (linkGoogleLH3) => {
+  return linkGoogleLH3.replace('lh3.google.com', 'lh4.googleusercontent.com');
+};

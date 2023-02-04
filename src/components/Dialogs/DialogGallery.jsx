@@ -1,8 +1,8 @@
 import React, { useCallback, useState } from 'react';
 import { Modal, ModalBody, ModalHeader } from 'reactstrap';
-import { convertThumbnailToOriginGGDrive } from 'helpers';
+import { convertThumbnailToOriginGGDrive, convertLH3ToLH4 } from 'helpers';
 import Image from 'components/Image';
-import ImageViewer from 'react-simple-image-viewer';
+import FsLightbox from 'fslightbox-react';
 
 const propTypes = {};
 
@@ -31,7 +31,8 @@ const imagesThumbNail = [
   'https://lh3.google.com/u/0/d/1hHSHeMYl805NiksP6klmjLLEIG9EQRwh=w400-h380-p-k-nu-iv1',
   'https://lh3.google.com/u/0/d/1aiJnJa9Tn440bdBVC5OUKx6uPJTWfryb=w400-h380-p-k-nu-iv1',
   'https://lh3.google.com/u/0/d/1UhZ_8pnk2ljTeqJQx0feJIFSExiRtryk=w400-h380-p-k-nu-iv1',
-];
+].map((src) => convertLH3ToLH4(src));
+
 const images = convertThumbnailToOriginGGDrive(imagesThumbNail);
 
 const DialogGallery = ({ open, toggle }) => {
@@ -50,6 +51,7 @@ const DialogGallery = ({ open, toggle }) => {
   };
 
   //! Function
+  const toggler = () => setIsViewerOpen(!isViewerOpen);
 
   //! Render
   return (
@@ -71,18 +73,7 @@ const DialogGallery = ({ open, toggle }) => {
           ))}
         </div>
 
-        {isViewerOpen && (
-          <ImageViewer
-            src={images}
-            currentIndex={currentImage}
-            onClose={closeImageViewer}
-            disableScroll
-            backgroundStyle={{
-              backgroundColor: 'rgba(0,0,0,0.9)',
-            }}
-            closeOnClickOutside={true}
-          />
-        )}
+        <FsLightbox toggler={toggler} sources={images} slide={currentImage + 1} />
       </ModalBody>
     </Modal>
   );
