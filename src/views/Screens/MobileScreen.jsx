@@ -55,7 +55,7 @@ const MobileScreen = () => {
         }}
       >
         {slides.map((el, idx) => {
-          return <SwiperSlide key={`${idx}`}>{indexSlides.includes(idx) && <el.component key={`${idx}`} />}</SwiperSlide>;
+          return <SwiperSlide key={`${idx}`}><el.component key={`${idx}`} /></SwiperSlide>;
         })}
       </Swiper>
     </Fragment>

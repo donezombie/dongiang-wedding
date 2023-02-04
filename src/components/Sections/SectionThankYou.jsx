@@ -9,10 +9,14 @@ import { GrLocation } from 'react-icons/gr';
 import { BsPiggyBank } from 'react-icons/bs';
 import { BiPhotoAlbum } from 'react-icons/bi';
 import { FcIphone } from 'react-icons/fc';
+import { useSwiperSlide } from 'swiper/react';
+import classNames from 'classnames';
 
 const SectionThankYou = () => {
   //! State
   const [openPay, togglePay, shouldRenderPay] = useToggleDialog();
+  const swipeSlider = useSwiperSlide();
+  const { isActive } = swipeSlider;
 
   const accessories = [
     {
@@ -41,7 +45,7 @@ const SectionThankYou = () => {
     <section className="footer">
       {shouldRenderPay && <DialogPay open={openPay} toggle={togglePay} />}
 
-      <div className="footer__couple animate__animated animate__fadeIn animate__slow">
+      <div className={classNames('footer__couple', { 'animate__animated animate__fadeIn animate__slow': isActive })}>
         <img src={CouplePic} alt="couple-frame" />
       </div>
 

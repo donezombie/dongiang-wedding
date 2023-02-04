@@ -2,11 +2,15 @@ import React from 'react';
 import BgDefault from 'assets/bg.png';
 import FlowerInvitationRight from 'assets/invitation-right.png';
 import FlowerTitleGif from 'assets/flower-title.gif';
+import { useSwiperSlide } from 'swiper/react';
+import classNames from 'classnames';
 
 const propTypes = {};
 
 const Screen3 = (props) => {
   //! State
+  const swipeSlider = useSwiperSlide();
+  const { isActive } = swipeSlider;
 
   //! Function
 
@@ -28,12 +32,20 @@ const Screen3 = (props) => {
         <img className="flower" alt="flower-left" src={FlowerInvitationRight} />
 
         <div className="main-text">
-          <span className="animate__animated animate__fadeInLeft animate__slow">Quý Đôn</span>
-          <span className="animate__animated animate__fadeIn animate__delay-2s animate__slow">&</span>
-          <span className="animate__animated animate__fadeInRight animate__slow">Hương Giang</span>
+          <span className={classNames({ 'animate__animated animate__fadeInLeft animate__slow': isActive })}>
+            Quý Đôn
+          </span>
+          <span
+            className={classNames({ 'animate__animated animate__fadeIn animate__delay-2s animate__slow': isActive })}
+          >
+            &
+          </span>
+          <span className={classNames({ 'animate__animated animate__fadeInRight animate__slow': isActive })}>
+            Hương Giang
+          </span>
         </div>
 
-        <div className="sub-text animate__animated animate__fadeIn animate__delay-3s">
+        <div className={classNames('sub-text', { 'animate__animated animate__fadeIn animate__delay-3s': isActive })}>
           <span>Được tổ chức vào 11 giờ 00 phút</span>
           <p className="time-wedding">
             <span className="time-with-line-top-bottom">Thứ bảy</span>
