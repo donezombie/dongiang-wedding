@@ -16,7 +16,7 @@ import './scss/styles.scss';
 import MobileScreen from 'views/Screens/MobileScreen';
 
 const App = () => {
-  console.log("VERSION_APP: 0.0.2");
+  console.log("VERSION_APP: 0.0.3");
   //! State
   // useLayoutEffect(() => {
   //   if (window.AOS) {
