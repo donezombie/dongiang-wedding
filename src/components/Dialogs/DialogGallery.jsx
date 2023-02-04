@@ -2,7 +2,7 @@ import React, { useCallback, useState } from 'react';
 import { Modal, ModalBody, ModalHeader } from 'reactstrap';
 import { convertThumbnailToOriginGGDrive } from 'helpers';
 import Image from 'components/Image';
-import FsLightbox from 'fslightbox-react';
+import ImageViewer from 'react-simple-image-viewer';
 
 const propTypes = {};
 
@@ -49,8 +49,6 @@ const DialogGallery = ({ open, toggle }) => {
     setIsViewerOpen(false);
   };
 
-  const toggleImgPreview = () => setIsViewerOpen(!isViewerOpen);
-
   //! Function
 
   //! Render
@@ -73,11 +71,18 @@ const DialogGallery = ({ open, toggle }) => {
           ))}
         </div>
 
-        <FsLightbox
-          toggler={toggleImgPreview}
-          sources={images}
-          slide={currentImage+1}
-        />
+        {isViewerOpen && (
+          <ImageViewer
+            src={images}
+            currentIndex={currentImage}
+            onClose={closeImageViewer}
+            disableScroll
+            backgroundStyle={{
+              backgroundColor: 'rgba(0,0,0,0.9)',
+            }}
+            closeOnClickOutside={true}
+          />
+        )}
       </ModalBody>
     </Modal>
   );
