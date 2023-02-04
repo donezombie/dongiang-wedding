@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Button, Modal, ModalBody } from 'reactstrap';
-import QrCodeBank1 from 'assets/qrCodeBank1.JPG';
+import QrCodeBank1 from 'assets/qrCodeBank1.jpg';
 import QrCodeBank2 from 'assets/qrCodeBank2.jpeg';
 import { AiOutlineClose } from 'react-icons/ai';
 
