@@ -1,7 +1,8 @@
 import React from 'react';
-import BgDefault from 'assets/bg.png';
+import firstBg from 'assets/main-bg.jpeg';
 import FlowerInvitationRight from 'assets/invitation-right.png';
 import FlowerTitleGif from 'assets/flower-title.gif';
+import BgInvitation from 'assets/bg-invitation.jpg'
 import classNames from 'classnames';
 
 const propTypes = {};
@@ -17,16 +18,14 @@ const Screen3 = ({isActive}) => {
       <div
         className="bg-full-screen"
         style={{
-          backgroundImage: `url(${BgDefault})`,
-          filter: 'unset',
-          backgroundSize: 'auto',
-          backgroundRepeat: 'repeat',
+          filter: 'blur(4px)',
+          backgroundImage: `url(${firstBg})`,
         }}
       />
 
       <div className="box">
         <img className="mb-3" style={{ width: 280 }} src={FlowerTitleGif} alt="tittle" />
-        <img className="flower" alt="flower-left" src={FlowerInvitationRight} />
+        <img className="flower" alt="flower-left" src={BgInvitation} />
 
         <div className="main-text">
           <span className={classNames({ 'animate__animated animate__fadeInLeft animate__slow': isActive })}>

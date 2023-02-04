@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Modal, ModalBody } from 'reactstrap';
-import QrCodeBank1 from 'assets/qrCodeBank1.JPG';
+import QrCodeBank1 from 'assets/qrCodeBank1.jpg';
+import QrCodeBank2 from 'assets/qrCodeBank2.jpeg';
 import { AiOutlineClose } from 'react-icons/ai';
 
 const propTypes = {};
@@ -33,7 +34,7 @@ const DialogPay = ({ open, toggle }) => {
         {isChuRe ? (
           <img style={{ objectFit: 'contain', width: '100%', height: '100%' }} alt="Don-QR-Bank" src={QrCodeBank1} />
         ) : (
-          <img style={{ objectFit: 'contain', width: '100%', height: '100%' }} alt="Giang-QR-Bank" src={QrCodeBank1} />
+          <img style={{ objectFit: 'contain', width: '100%', height: '100%' }} alt="Giang-QR-Bank" src={QrCodeBank2} />
         )}
       </ModalBody>
     </Modal>

@@ -85,7 +85,7 @@ a {
 }
 
 .mini_calendar {
-  border-bottom: 1px solid #e3e3e6;
+  border-bottom: 1px solid var(--black-color);
   padding-bottom: 12px;
 
   .calendar-month {
@@ -97,7 +97,8 @@ a {
 
   .this-day {
     border-radius: 50%;
-    border: 2px solid #ccc;
+    border: 2px solid var(--black-color);
+    background-color: #F8CBA6;
     width: 30px;
     height: 30px;
     display: inline-block;
@@ -111,8 +112,8 @@ a {
       text-align: center;
       padding: 8px 0;
       color: #484747;
-      border-top: 1px solid #cfcfd0;
-      border-bottom: 1px solid #cfcfd0;
+      border-top: 1px solid var(--black-color);
+      border-bottom: 1px solid var(--black-color);
       font-size: 1rem;
       font-weight: normal;
     }
@@ -164,7 +165,7 @@ a {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    border: 2px solid #ccc;
+    // border: 2px solid #ccc;
     border-radius: 4px;
   }
 }
