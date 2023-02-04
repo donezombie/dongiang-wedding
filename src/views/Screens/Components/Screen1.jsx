@@ -13,24 +13,20 @@ const Screen1 = (props) => {
   return (
     <div className="screen-1">
       <div
-        className='bg-full-screen'
+        className="bg-full-screen"
         style={{
-          filter: 'blur(5px)',
+          filter: 'blur(4px)',
           backgroundImage: `url(${firstBg})`,
         }}
       />
 
       <div className="content">
-        <div className="flower-img" data-aos="fade-down" data-aos-duration="1000">
+        <div className="flower-img animate__animated animate__fadeInDown animate__slow">
           <img alt="flower" src={FlowerImg} />
         </div>
-        <img className="main-img" data-aos-delay="300" data-aos-duration="1000" data-aos="fade-down" src={firstBg} alt="hihi" />
-        <p data-aos="fade-left" data-aos-delay="600" data-aos-duration="1500">
-          Đôn & Giang
-        </p>
-        <p data-aos="fade-right" data-aos-delay="900" data-aos-duration="1500">
-          WEDDING MEMORIES
-        </p>
+        <img className="main-img animate__animated animate__fadeIn animate__slow" src={firstBg} alt="don-giang" />
+        <p className="animate__animated animate__fadeInLeft animate__delay-2s animate__slow">Đôn & Giang</p>
+        <p className="animate__animated animate__fadeInRight animate__delay-2s animate__slow">WEDDING MEMORIES</p>
       </div>
     </div>
   );
