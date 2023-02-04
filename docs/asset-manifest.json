@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.045683ed.css",
-    "main.js": "/static/js/main.7f9febac.js",
+    "main.js": "/static/js/main.184939c9.js",
     "static/js/496.90578cba.chunk.js": "/static/js/496.90578cba.chunk.js",
     "static/media/main-bg.jpeg": "/static/media/main-bg.b37329eb994057abcfd9.jpeg",
     "static/media/bg-save-the-date.jpg": "/static/media/bg-save-the-date.f9ec6d804b1a9a24bd8c.jpg",
@@ -13,7 +13,7 @@
     "static/media/footer-shape.png": "/static/media/footer-shape.0d4c3c8c62f601298df9.png",
     "static/media/invitation-right.png": "/static/media/invitation-right.1ad98c934fd5c6b9b4d3.png",
     "static/media/couple-frame.png": "/static/media/couple-frame.c8e295016a6e721b670a.png",
-    "static/media/qrCodeBank1.jpg": "/static/media/qrCodeBank1.35714952cab5f2407bd2.jpg",
+    "static/media/qrCodeBank1.JPG": "/static/media/qrCodeBank1.35714952cab5f2407bd2.JPG",
     "static/media/bg.png": "/static/media/bg.665c783f2c20cffc2c28.png",
     "static/media/swipe.gif": "/static/media/swipe.ebe8663bd65cf043d111.gif",
     "static/media/invitation-left.png": "/static/media/invitation-left.9400fbd340f37ee2d664.png",
@@ -22,11 +22,11 @@
     "static/media/flower.png": "/static/media/flower.1ea9ed4bd67b4d15abde.png",
     "index.html": "/index.html",
     "main.045683ed.css.map": "/static/css/main.045683ed.css.map",
-    "main.7f9febac.js.map": "/static/js/main.7f9febac.js.map",
+    "main.184939c9.js.map": "/static/js/main.184939c9.js.map",
     "496.90578cba.chunk.js.map": "/static/js/496.90578cba.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.045683ed.css",
-    "static/js/main.7f9febac.js"
+    "static/js/main.184939c9.js"
   ]
 }
