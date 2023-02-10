@@ -24,7 +24,7 @@ const Screen3 = ({isActive}) => {
       />
 
       <div className="box">
-        <img className="mb-3" style={{ width: 280 }} src={FlowerTitleGif} alt="tittle" />
+        <img className="mb-3 flower-title" style={{ width: 280 }} src={FlowerTitleGif} alt="tittle" />
         <img className="flower" alt="flower-left" src={BgInvitation} />
 
         <div className="main-text">

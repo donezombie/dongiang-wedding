@@ -3,7 +3,7 @@
   height: 100vh;
   position: relative;
 
-  overflow: hidden;
+  // overflow: hidden;
 
   &__overlay {
     position: absolute;
@@ -232,6 +232,10 @@
 
   &__text {
     font-size: 1rem;
+
+    @include ip6Height {
+      font-size: 0.825rem;
+    }
   }
 
   &__couple {
@@ -254,6 +258,10 @@
     @include mobile {
       width: 50vw;
       height: 50vw;
+    }
+
+    @include ip6Height {
+      transform: translateY(10px);
     }
 
     > img:first-child {
@@ -287,6 +295,22 @@
       max-height: 150px;
       width: calc(100vw / 3 - 20px);
       height: calc(100vw / 3 - 20px);
+
+      @include ip6Height {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .footer__phone {
+    @include ip6Height {
+      > span {
+        font-size: 13px;
+
+        > span {
+          font-size: 13px !important;
+        }
+      }
     }
   }
 }

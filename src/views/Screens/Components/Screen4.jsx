@@ -11,7 +11,7 @@ const Screen4 = ({ isActive }) => {
 
   //! Render
   return (
-    <div className="screen-3">
+    <div className="screen-4">
       <div
         className="bg-full-screen"
         style={{

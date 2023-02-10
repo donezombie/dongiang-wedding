@@ -16,6 +16,12 @@
   }
 }
 
+@mixin ip6Height() {
+  @media (max-height: 510px) {
+    @content;
+  }
+}
+
 $breakpoints: (
   xs: 576px,
   sm: 768px,

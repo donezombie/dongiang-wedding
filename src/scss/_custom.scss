@@ -94,6 +94,12 @@ a {
     font-weight: 600;
     color: var(--black-color);
     font-size: 1.25rem;
+
+    @include ip6Height {
+      font-size: 16px;
+      padding: 0;
+      padding-top: 12px;
+    }
   }
 
   .this-day {
@@ -102,7 +108,9 @@ a {
     background-color: #F8CBA6;
     width: 30px;
     height: 30px;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
   }
 
   table {
@@ -146,6 +154,16 @@ a {
     .date {
       font-family: 'Great Vibes', cursive;
       font-size: 2.5rem;
+    }
+
+    @include ip6Height {
+      span {
+        font-size: 14px;
+      }
+
+      .date {
+        font-size: 2rem;
+      }
     }
   }
 }

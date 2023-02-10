@@ -31,12 +31,12 @@ const Screen1 = ({ isActive }) => {
           alt="don-giang"
         />
         <p
-          className={classNames({ 'animate__animated animate__fadeInLeft animate__delay-3s animate__slow': isActive })}
+          className={classNames('name',{ 'animate__animated animate__fadeInLeft animate__delay-3s animate__slow': isActive })}
         >
           Đôn & Giang
         </p>
         <p
-          className={classNames({ 'animate__animated animate__fadeInRight animate__delay-3s animate__slow': isActive })}
+          className={classNames('wedding-memories', { 'animate__animated animate__fadeInRight animate__delay-3s animate__slow': isActive })}
         >
           WEDDING MEMORIES
         </p>

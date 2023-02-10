@@ -32,15 +32,23 @@
 
   p:nth-of-type(1) {
     font-size: 24px;
-    margin-bottom: 6px;
-    margin-top: 24px;
+    margin-bottom: 0px;
+    margin-top: 12px;
     letter-spacing: 3px;
+
+    @include ip6Height {
+      font-size: 20px;
+    }
   }
 
   p:nth-of-type(2) {
     font-size: 18px;
     letter-spacing: 3px;
     font-family: var(--font-rale-way);
+    
+    @include ip6Height {
+      font-size: 14px;
+    }
   }
 
   .content {
@@ -48,10 +56,11 @@
       width: 40vh;
       box-shadow: 0px 2px 4px rgba(0, 0, 0, 1);
       border-radius: 4px;
+      margin-bottom: 12px;
     }
 
     .flower-img {
-      max-width: 100px;
+      max-width: 80px;
       margin: auto;
       img {
         width: 100%;
@@ -76,8 +85,33 @@
     z-index: 3;
   }
 
+  .box {
+    @include ip6Height {
+      width: 120% !important;
+      padding: 70px 50px !important;
+    }
+  }
+
+  .mini_calendar {
+    @include ip6Height {
+      tr > th {
+        font-size: 14px;
+      }
+      tr > td {
+        font-size: 12px;
+        padding-top: 10px;
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+
   .save-date {
     margin-bottom: 14px;
+    @include ip6Height {
+      max-width: 100px;
+      margin-bottom: 8px;
+    }
   }
 
   .flower {
@@ -113,6 +147,10 @@
       &:nth-child(3) {
         text-align: right;
       }
+
+      @include ip6Height {
+        font-size: 1.8rem;
+      }
     }
   }
 
@@ -138,6 +176,12 @@
       font-style: italic;
       margin-bottom: 6px;
     }
+
+    @include ip6Height {
+      span, p {
+        font-size: 13px;
+      }
+    }
   }
 
   .family {
@@ -146,6 +190,12 @@
 
     p {
       font-weight: 500;
+    }
+  }
+
+  .box {
+    @include ip6Height {
+      transform: translateY(-40px) !important;
     }
   }
 }

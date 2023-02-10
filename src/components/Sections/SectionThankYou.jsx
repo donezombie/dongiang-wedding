@@ -64,7 +64,7 @@ const SectionThankYou = ({ isActive }) => {
         })}
       </div>
 
-      <div className="d-flex justify-content-evenly w-100">
+      <div className="footer__phone d-flex justify-content-evenly w-100">
         <span>
           <FcIphone /> Chú rể: <br />
           <span style={{ fontSize: 18, fontWeight: 500 }}>039 5029 800</span>
