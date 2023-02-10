@@ -248,12 +248,12 @@
     align-items: center;
     justify-content: center;
     margin-top: 16px;
+    background-size: cover;
+    flex-shrink: 0;
 
     @include mobile {
       width: 50vw;
       height: 50vw;
-      background-size: cover;
-      flex-shrink: 0;
     }
 
     > img:first-child {
@@ -283,6 +283,8 @@
     gap: 16px;
 
     > div {
+      max-width: 150px;
+      max-height: 150px;
       width: calc(100vw / 3 - 20px);
       height: calc(100vw / 3 - 20px);
     }
