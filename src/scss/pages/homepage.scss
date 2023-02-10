@@ -230,6 +230,10 @@
 
   background-color: #fff;
 
+  &__text {
+    font-size: 1rem;
+  }
+
   &__couple {
     width: 400px;
     height: 400px;
@@ -246,9 +250,10 @@
     margin-top: 16px;
 
     @include mobile {
-      width: 250px;
-      height: 250px;
+      width: 50vw;
+      height: 50vw;
       background-size: cover;
+      flex-shrink: 0;
     }
 
     > img:first-child {
@@ -268,12 +273,9 @@
 
   &__thank {
     max-width: 280px;
+    width: 30vw;
     margin-bottom: 12px;
     filter: invert(1);
-
-    @include mobile {
-      width: 150px;
-    }
   }
 
   .footer-accessories {
@@ -281,8 +283,8 @@
     gap: 16px;
 
     > div {
-      width: 110px;
-      height: 110px;
+      width: calc(100vw / 3 - 20px);
+      height: calc(100vw / 3 - 20px);
     }
   }
 }

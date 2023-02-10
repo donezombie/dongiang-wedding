@@ -49,7 +49,7 @@ const SectionThankYou = ({ isActive }) => {
         <img src={CouplePic} alt="couple-frame" />
       </div>
 
-      <p>Sự hiện diện của quý khách là niềm vinh hạnh cho gia đình chúng tôi! ❤️</p>
+      <p className='footer__text'>Sự hiện diện của quý khách là niềm vinh hạnh cho gia đình chúng tôi! ❤️</p>
 
       <img className="footer__thank" src={ThankYou} alt="thank-you-gif" />
 
