@@ -1,12 +1,12 @@
 import React from 'react';
-import firstBg from 'assets/main-bg.jpeg';
 import FlowerTitleGif from 'assets/flower-title.gif';
-import BgInvitation from 'assets/bg-invitation.jpeg'
 import classNames from 'classnames';
+import { convertLH3ToLH4 } from 'helpers';
+import { linkFirstBg } from 'constants/index';
 
 const propTypes = {};
 
-const Screen3 = ({isActive}) => {
+const Screen3 = ({ isActive }) => {
   //! State
 
   //! Function
@@ -18,13 +18,17 @@ const Screen3 = ({isActive}) => {
         className="bg-full-screen"
         style={{
           filter: 'blur(4px)',
-          backgroundImage: `url(${firstBg})`,
+          backgroundImage: `url(${linkFirstBg})`,
         }}
       />
 
       <div className="box">
         <img className="mb-3 flower-title" style={{ width: 280 }} src={FlowerTitleGif} alt="tittle" />
-        <img className="flower" alt="flower-left" src={BgInvitation} />
+        <img
+          className="flower"
+          alt="flower-left"
+          src={convertLH3ToLH4('https://lh3.google.com/u/0/d/1w5Z5K9eeY6HxtSmNjk6qiWIXJxcnAYAY=w3470-h2032-iv1')}
+        />
 
         <div className="main-text">
           <span className={classNames({ 'animate__animated animate__fadeInLeft animate__slow': isActive })}>

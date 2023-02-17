@@ -1,12 +1,13 @@
 import React from 'react';
-import firstBg from 'assets/main-bg.jpeg';
 import FlowerImg from 'assets/flower.png';
 import classNames from 'classnames';
+import { linkFirstBg } from 'constants/index';
 
 const propTypes = {};
 
 const Screen1 = ({ isActive }) => {
   //! State
+  const firstBg = linkFirstBg;
 
   //! Function
 

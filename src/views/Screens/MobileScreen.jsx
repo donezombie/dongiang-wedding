@@ -30,7 +30,7 @@ const MobileScreen = () => {
 
       setTimeout(() => {
         toggle();
-      }, 2500);
+      }, 1500);
     }
   }, [loading]);
 

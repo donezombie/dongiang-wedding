@@ -1,6 +1,4 @@
 import React from 'react';
-import ThankYou from 'assets/thankyou.gif';
-import CouplePic from 'assets/couplePic.jpeg';
 import useToggleDialog from 'hooks/useToggleDialog';
 import DialogPay from 'components/Dialogs/DialogPay';
 import { linkMap } from 'constants';
@@ -12,6 +10,8 @@ import { FcIphone } from 'react-icons/fc';
 import classNames from 'classnames';
 import DialogGallery from 'components/Dialogs/DialogGallery';
 import { useSwiperSlide } from 'swiper/react';
+import { couplePic } from 'constants';
+import { thankyouLink } from 'constants';
 
 const SectionThankYou = ({ isActive }) => {
   //! State
@@ -46,12 +46,12 @@ const SectionThankYou = ({ isActive }) => {
       {shouldRenderAlbum && <DialogGallery open={openAlbum} toggle={toggleAlbum} />}
 
       <div className={classNames('footer__couple', { 'animate__animated animate__fadeIn animate__slow': isActive })}>
-        <img src={CouplePic} alt="couple-frame" />
+        <img src={couplePic} alt="couple-frame" />
       </div>
 
       <p className='footer__text'>Sự hiện diện của quý khách là niềm vinh hạnh cho gia đình chúng tôi! ❤️</p>
 
-      <img className="footer__thank" src={ThankYou} alt="thank-you-gif" />
+      <img className="footer__thank" src={thankyouLink} alt="thank-you-gif" />
 
       <div className="footer-accessories mb-1">
         {accessories.map((el) => {
