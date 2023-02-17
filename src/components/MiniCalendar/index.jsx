@@ -9,7 +9,7 @@ const row4 = [20, 21, 22, 23, 24, 25, 26];
 const row5 = [27, 28, '', '', '', '', ''];
 
 const weddingDay = 18;
-const weddingDate = 'Feb 18, 2023 00:00:00';
+const weddingDate = 'Feb 18, 2023 11:00:00';
 
 const MiniCalendar = () => {
   const [date, setDate] = useState({
@@ -63,23 +63,25 @@ const MiniCalendar = () => {
     return (
       <div className={`count-down-boxes ${finish ? 'finish' : ''}`}>
         {finish ? (
-          <div>Đã cứi ^.^</div>
+          <div style={{ width: '100%', marginTop: 8 }}>
+            <span className="over">Đã cứi ^.^ ❤️</span>
+          </div>
         ) : (
           <Fragment>
             <div>
-              <span className='date'>{date.days}</span>
+              <span className="date">{date.days}</span>
               <span>Ngày</span>
             </div>
             <div>
-              <span className='date'>{date.hours}</span>
+              <span className="date">{date.hours}</span>
               <span>Giờ</span>
             </div>
             <div>
-              <span className='date'>{date.minutes}</span>
+              <span className="date">{date.minutes}</span>
               <span>Phút</span>
             </div>
             <div>
-              <span className='date'>{date.seconds}</span>
+              <span className="date">{date.seconds}</span>
               <span>Giây</span>
             </div>
           </Fragment>

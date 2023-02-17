@@ -1,6 +1,6 @@
 import React from 'react';
 import ThankYou from 'assets/thankyou.gif';
-import CouplePic from 'assets/couplePic.jpg';
+import CouplePic from 'assets/couplePic.jpeg';
 import useToggleDialog from 'hooks/useToggleDialog';
 import DialogPay from 'components/Dialogs/DialogPay';
 import { linkMap } from 'constants';

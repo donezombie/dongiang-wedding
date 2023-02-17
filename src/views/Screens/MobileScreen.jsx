@@ -21,8 +21,18 @@ const MobileScreen = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 1000);
+    }, 1300);
   }, []);
+
+  useEffect(() => {
+    if (!loading) {
+      toggle();
+
+      setTimeout(() => {
+        toggle();
+      }, 2500);
+    }
+  }, [loading]);
 
   //! Render
   const slides = [

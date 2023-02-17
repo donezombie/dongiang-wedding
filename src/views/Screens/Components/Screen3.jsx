@@ -1,8 +1,7 @@
 import React from 'react';
 import firstBg from 'assets/main-bg.jpeg';
-import FlowerInvitationRight from 'assets/invitation-right.png';
 import FlowerTitleGif from 'assets/flower-title.gif';
-import BgInvitation from 'assets/bg-invitation.jpg'
+import BgInvitation from 'assets/bg-invitation.jpeg'
 import classNames from 'classnames';
 
 const propTypes = {};

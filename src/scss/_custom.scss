@@ -151,7 +151,7 @@ a {
       font-size: 1rem;
     }
 
-    .date {
+    .date, .over {
       font-family: 'Great Vibes', cursive;
       font-size: 2.5rem;
     }
@@ -238,5 +238,36 @@ a {
 
   img {
     width: 250px;
+  }
+}
+
+.modal-introduce {
+  .modal-content {
+    background-color: unset !important;
+    border: none;
+  }
+
+  .modal-body {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      transform: translateX(100px);
+      max-width: 90px;
+      filter: invert(1);
+      animation: rotationAnimated 1.1s infinite alternate;
+    }
+  }
+}
+
+@keyframes rotationAnimated {
+  from {
+    transform: translateX(100px);
+  }
+
+  to {
+    transform: translateX(0px);
   }
 }

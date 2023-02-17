@@ -3,7 +3,7 @@ import SaveDateGif from 'assets/savethedate.gif';
 import MiniCalendar from 'components/MiniCalendar';
 import FlowerInvitationLeft from 'assets/invitation-left.png';
 import firstBg from 'assets/main-bg.jpeg';
-import bgSaveTheDate from 'assets/bg-save-the-date.jpg';
+import bgSaveTheDate from 'assets/bg-save-the-date.jpeg';
 
 const propTypes = {};
 
