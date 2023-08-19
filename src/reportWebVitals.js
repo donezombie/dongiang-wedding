@@ -9,6 +9,5 @@ const reportWebVitals = (onPerfEntry) => {
     });
   }
 };
-// https://xscandals.com/tunamayo-fantia-pics-videos/
 
 export default reportWebVitals;
